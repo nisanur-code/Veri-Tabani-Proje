@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,19 +12,52 @@
         android:id="@+id/tvGozetmenAdi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Merhaba Sayın Gözetmen,"
+        android:text="Yönetici Sınav Takvimi Paneli"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#333333"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="4dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Güncel sınav görevleriniz aşağıda listelenmiştir:"
+        android:text="Sınavları bölümlere ve sınıflara göre filtreleyebilirsiniz:"
         android:textSize="14sp"
         android:textColor="#666666"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <Spinner
+                android:id="@+id/spFiltreBolum"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:layout_marginEnd="4dp" />
+
+            <Spinner
+                android:id="@+id/spFiltreSinif"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvSinavlar"
