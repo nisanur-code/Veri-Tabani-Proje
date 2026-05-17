@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otomatik Sınav Planlama"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etDersAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ders Adı"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/etOgrenciSayisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Girecek Öğrenci Sayısı"
+        android:inputType="number"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btnSalonSorgula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistemin En Uygun Tarihi Atamasını Sağla"
+        android:backgroundTint="#673AB7"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tvOnerilenSalonlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Önerilen Salon: -"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnSinavKaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sınavı Kaydet"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

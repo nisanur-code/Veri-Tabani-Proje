@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sınav Yönetim Sistemi"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Kullanıcı Adı"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etSifre"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Şifre"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnYoneticiGirisi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Yönetici Girişi"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnGozetmenGirisi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Gözetmen Girişi"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnKayitOlGit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hala kayıt olmadınız mı? Kayıt Ol"
+        android:textColor="#FF9800"
+        android:textAllCaps="false"
+        android:textSize="14sp" />
+
+</LinearLayout>

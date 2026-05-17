@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yönetici Kontrol Paneli"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:textColor="#333333"/>
+
+    <Button
+        android:id="@+id/btnProgramOlustur"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Sınav Programı Oluştur"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#673AB7"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnSalonIslemleri"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Salon ve Kapasite İşlemleri"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnDersIslemleri"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Ders ve Bölüm İşlemleri"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnPersonelIslemleri"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Personel ve Mazeret Kaydı"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnCikisYap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Güvenli Çıkış"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#F44336"/>
+
+</LinearLayout>

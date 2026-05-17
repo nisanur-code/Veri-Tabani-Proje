@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/tvGozetmenAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Merhaba Sayın Gözetmen,"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Güncel sınav görevleriniz aşağıda listelenmiştir:"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSinavlar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnGeri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ana Menüye Dön"
+        android:backgroundTint="#607D8B"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
